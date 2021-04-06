@@ -71,6 +71,7 @@ header {
 .background-container p {
   font-family: "Staatliches";
   font-size: 3em;
+  padding: 0px 10px;
   margin-top: 30px;
   color: #ffffff;
   text-align: center;
@@ -79,23 +80,28 @@ header {
 /* barra de navegación */
 /*///////////////////////////////////////////////////////////////////////*/
 
+.burger-container,
+.logo-page {
+  display: none;
+}
+
 .nav-container {
-  position: absolute;
+  position: fixed;
   display: block;
-  width: 100%;
-  height: 13vh;
+  width: 80%;
+  height: 90px;
   top: 0;
+  background-color: rgb(68, 68, 68, 0.5); /*alpha: transparency*/
 }
 
 .nav-container > .ul-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: auto;
   list-style: none;
-  background-color: rgb(68, 68, 68, 0.3); /*alpha: transparency*/
 }
 
 .ul-container > .li-container a {
@@ -144,7 +150,7 @@ main {
   margin-top: 60px;
   font-size: 2em;
   color: #fff;
-  background: rgba(68, 68, 68, 0.6);
+  background: rgba(68, 68, 68, 0.7);
   line-height: 1.6em;
   border-bottom: 8px solid #8b1919;
 }
@@ -244,19 +250,6 @@ main {
   overflow: hidden; /*de esta forma no ensancha en contenedor*/
   outline: 3px solid #333;
 }
-
-/* 
-.img-container p{
-    position: absolute;
-    color: #fff;
-    display: flex;
-    top: 50%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    z-index: 50;
-    visibility: hidden;
-} */
 
 .gallery-container img:hover {
   filter: blur(2px);
@@ -399,9 +392,71 @@ footer {
     grid-column: 1 / 5;
     grid-row: 6 / 7;
   }
+  .nav-container {
+    width: 100%;
+    height: 80px;
+    transition: height 0.5s;
+  }
+
+  .ul-container {
+    width: 100% !important;
+  }
+
+  .ul-container li {
+    font-size: 0.8em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+  }
 }
 
 @media screen and (max-width: 670px) {
+  .burger-container {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 100%;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  .burger-container img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+  }
+
+  .nav-container {
+    z-index: 500;
+  }
+
+  .nav-container > .logo-page {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 20px 10px;
+    margin-right: 10px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.88em;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+
+  .ul-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: unset !important;
+    background: linear-gradient(to top, #111, #444);
+    align-items: flex-start !important;
+  }
+
+  .ul-container li {
+    margin: 20px;
+  }
+
   .gallery-container {
     display: flex;
     flex-direction: column;
@@ -416,7 +471,7 @@ footer {
   }
 
   .menu-container {
-    min-width: 350px;
+    min-width: 330px;
     padding: 0px 30px;
   }
 
@@ -440,7 +495,16 @@ footer {
   }
 
   .background-container h1 {
-    font-size: 4em;
+    font-size: 3.8em;
+  }
+
+  .section1-container {
+    width: 100%;
+  }
+
+  .section1-container p {
+    padding: 10px;
+    width: 100%;
   }
 
   .block3 .formulario {
