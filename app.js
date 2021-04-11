@@ -1,8 +1,13 @@
-// seleccionando el NAV. Creando el media query
+// CONSTANTES DECLARADAS
+
 const navContainer = document.querySelector(".nav-container");
 const ulContainer = document.querySelector(".ul-container");
+const imgBurger = document.querySelector(".burger-container img");
+const burgerButton = document.querySelector(".burger-container");
+
+// función el cual oculta o muestra la barra de navegación
+// Realizando nuestro "match media" o media query
 const resMobile = matchMedia("(max-width: 670px)");
-// funcion
 const displayNav = (mql) => {
   mql.matches
     ? (ulContainer.style.display = "none")
@@ -26,9 +31,6 @@ displayNav(resMobile);
 
 // burger button
 
-const burgerButton = document.querySelector(".burger-container");
-const imgBurger = document.querySelector(".burger-container img");
-
 console.log(imgBurger);
 console.log(burgerButton);
 const showNav = () => {
@@ -49,9 +51,3 @@ burgerButton.addEventListener("click", showNav);
 //
 //
 //
-
-const imgContainer = document.querySelectorAll(".img-container");
-console.log(imgContainer);
-const newCont = imgContainer.forEach((container) => {
-  console.log(container);
-});
