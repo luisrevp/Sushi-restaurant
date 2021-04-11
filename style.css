@@ -284,6 +284,28 @@ main {
   grid-row: 4 / 6;
 }
 
+/* API DE GOOGLE MAPS */
+
+section.location {
+  width: 80%;
+  margin: 10px auto 60px;
+}
+
+.location > h1 {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  color: var(--green1);
+  font-family: var(--fontGame);
+  font-size: 3em;
+}
+#map {
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  border: 5px solid #333;
+}
+
 /* PIE DE PÁGINA*/
 /*/////////////////////////////////////////////////////////*/
 
@@ -486,6 +508,11 @@ footer {
   .section2-container h2 {
     font-size: 2.5em;
   }
+
+  .location h1 {
+    font-size: 1.78em;
+    padding: 30px 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -506,6 +533,15 @@ footer {
   .section1-container p {
     padding: 10px;
     width: 100%;
+  }
+
+  .location {
+    width: 100%;
+  }
+
+  .location #map {
+    width: 100%;
+    margin: 0;
   }
 
   .block3 .formulario {
@@ -534,24 +570,4 @@ footer {
   body {
     width: 100%;
   }
-}
-
-/* API DE GOOGLE MAPS */
-
-section.location {
-  margin: 20px;
-}
-
-.location > h1 {
-  width: 100%;
-  text-align: center;
-  padding: 30px;
-  color: var(--green1);
-  font-family: var(--fontGame);
-  font-size: 3em;
-}
-#map {
-  height: 400px;
-  width: 60%;
-  margin: 10px auto 60px;
 }
