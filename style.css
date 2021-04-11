@@ -8,6 +8,7 @@
 :root {
   --green1: #48da05;
   --green2: #868686;
+  --fontGame: "Press Start 2P";
 }
 
 html {
@@ -533,4 +534,24 @@ footer {
   body {
     width: 100%;
   }
+}
+
+/* API DE GOOGLE MAPS */
+
+section.location {
+  margin: 20px;
+}
+
+.location > h1 {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  color: var(--green1);
+  font-family: var(--fontGame);
+  font-size: 3em;
+}
+#map {
+  height: 400px;
+  width: 60%;
+  margin: 10px auto 60px;
 }
