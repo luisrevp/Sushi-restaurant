@@ -35,7 +35,8 @@ console.log(imgBurger);
 console.log(burgerButton);
 const showNav = () => {
   ulContainer.style.display == "none"
-    ? (ulContainer.style = "display:flex") &&
+    ? (ulContainer.style =
+        "display:flex; background: rgba(68, 68, 68, 0.85)") &&
       imgBurger.setAttribute("src", "./media/cross.svg")
     : (ulContainer.style.display = "none") &&
       imgBurger.setAttribute("src", "./media/Hamburger.svg");

@@ -210,6 +210,7 @@ main {
   width: 100%;
   padding-bottom: 300px;
   border-top: 8px solid #8b1919;
+  border-bottom: 8px solid #8b1919;
   justify-content: center;
 }
 
@@ -287,8 +288,8 @@ main {
 /* API DE GOOGLE MAPS */
 
 section.location {
-  width: 80%;
-  margin: 10px auto 60px;
+  width: 90%;
+  margin: 200px auto;
 }
 
 .location > h1 {
