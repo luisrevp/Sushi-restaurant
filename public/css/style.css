@@ -50,7 +50,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url(./media/hor3.jpg);
+  background-image: url(https://images.pexels.com/photos/539430/pexels-photo-539430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   box-shadow: inset 0px 0px 350px black;
 }
 
@@ -126,10 +126,9 @@ header {
 main {
   width: 100%;
   min-height: auto;
-  background-image: url(./media/vert3.jpg);
+  background-image: url(https://images.pexels.com/photos/3338499/pexels-photo-3338499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-attachment: fixed;
   background-size: cover;
-  /* padding-bottom: 10em; */
 }
 
 .section1-container,

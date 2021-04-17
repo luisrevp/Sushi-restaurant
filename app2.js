@@ -14,6 +14,7 @@ function initMap() {
       position: lugar.coordenadas,
       map: map,
     });
+    // ---SIN USO: Solo disponible para usuarios de google cloud. Esta declaración define la añadidura de info al pin de ubicación--- //
     if (lugar.content) {
       let infoWindow = new google.maps.infoWindow({
         content: lugar.content,
