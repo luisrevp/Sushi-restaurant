@@ -312,6 +312,11 @@ section.location {
 /*/////////////////////////////////////////////////////////*/
 
 footer {
+  background: #444;
+  box-shadow: inset 0px 0px 350px black;
+}
+
+footer .footer-wrap {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -319,8 +324,6 @@ footer {
   width: 100%;
   min-height: 32vh;
   height: auto !important;
-  background: #444;
-  box-shadow: inset 0px 0px 350px black;
   border-top: 6px solid #dd2222;
 }
 
@@ -384,6 +387,33 @@ footer {
 }
 .footer-container p {
   font-size: 1.1em;
+}
+
+footer .autor {
+  display: flex;
+  min-height: 40px;
+  background: #111;
+  border-top: 2px solid #8b1919;
+  margin-top: 20px;
+}
+
+footer .autor p {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 2em;
+  font-size: 0.8em;
+}
+
+footer .autor p > a {
+  /* text-decoration: none; */
+  color: #fff;
+}
+
+footer .autor p span {
+  color: red;
 }
 
 /* MEDIA QUERIES */

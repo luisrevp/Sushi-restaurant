@@ -5,7 +5,7 @@ const getIMG = document.querySelectorAll(".img-container > img");
 
 getImages.forEach((imgCont, ind) => {
   let newEl = document.createElement("a");
-  newEl.setAttribute("href", "#");
+  newEl.setAttribute("href", `plato${ind + 1}`);
   newEl.textContent = "¡Pide acá!";
   newEl.style = `position: absolute; 
     display: block;
