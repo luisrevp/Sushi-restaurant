@@ -16,7 +16,7 @@ const displayNav = (mql) => {
   mql.matches
     ? (ulContainer.style.display = "none")
     : (ulContainer.style.display = "flex") &&
-      imgBurger.setAttribute("src", "../media/Hamburger.svg");
+      imgBurger.setAttribute("src", "media/Hamburger.svg");
 };
 // agregando el evento
 resMobile.addListener(displayNav);
@@ -35,8 +35,8 @@ const showNav = () => {
   ulContainer.style.display == "none"
     ? (ulContainer.style =
         "display:flex; background: rgba(68, 68, 68, 0.85)") &&
-      imgBurger.setAttribute("src", "../media/cross.svg")
+      imgBurger.setAttribute("src", "media/cross.svg")
     : (ulContainer.style.display = "none") &&
-      imgBurger.setAttribute("src", "../media/Hamburger.svg");
+      imgBurger.setAttribute("src", "media/Hamburger.svg");
 };
 burgerButton.addEventListener("click", showNav);
