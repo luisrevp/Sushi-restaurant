@@ -5,8 +5,12 @@ const ulContainer = document.querySelector(".ul-container");
 const imgBurger = document.querySelector(".burger-container img");
 const burgerButton = document.querySelector(".burger-container");
 
-// función el cual oculta o muestra la barra de navegación
-// Realizando nuestro "match media" o media query
+/*
+=======================================================
+función el cual oculta o muestra la barra de navegación
+Realizando nuestro "match media" o media query
+=======================================================
+*/
 const resMobile = matchMedia("(max-width: 670px)");
 const displayNav = (mql) => {
   mql.matches
@@ -19,17 +23,11 @@ resMobile.addListener(displayNav);
 // llamando la función al iniciar la página
 displayNav(resMobile);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-// burger button
+/*
+=============
+burger button
+=============
+*/
 
 console.log(imgBurger);
 console.log(burgerButton);
@@ -42,13 +40,3 @@ const showNav = () => {
       imgBurger.setAttribute("src", "../media/Hamburger.svg");
 };
 burgerButton.addEventListener("click", showNav);
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
